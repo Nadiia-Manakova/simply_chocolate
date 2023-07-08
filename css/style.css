@@ -1,3 +1,17 @@
+:root {
+  --text-color: #111;
+  --white-backgroung-color: #fff;
+  --light: #fafafa;
+  --pressed-state: #fcf1e0;
+  --black-background: #1e1823;
+  --primary-brand: #fd9222;
+}
+/* 
+===========================
+command styles
+===========================
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +24,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Montserrat, sans-serif;
+  color: var();
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.28px;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -17,6 +39,48 @@ ol {
 
 a {
   color: inherit;
-  font-family: inherit;
+  display: inline-block;
   text-decoration: none;
+}
+
+img {
+  display: inline-block;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: currentColor;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* 
+===========================
+base styles
+===========================
+*/
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.wrap {
+  display: flex;
 }
