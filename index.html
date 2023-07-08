@@ -22,39 +22,39 @@
 
     <header>
       <div class="header-wrap wrap container">
-        <a href="./index.html" class="logo wrap">
-          SIMPLY CHOCOLATE
-          <img
-            src="./images/logo-img.png"
-            alt=""
-            class="logo-img"
-            width="24"
-            height="24"
-          />
-        </a>
-        <nav class="nav-menu">
+                 <a href="./index.html" class="logo-wrap wrap">
+            <p class="logo-text"><span class="logo-accent"> SIMPLY</span> CHOCOLATE</p>
+            <img
+              src="./images/logo-img.png"
+              alt=""
+              class="logo-img"
+              width="24"
+              height="24"
+            />
+          </a>
+                <nav class="nav-menu">
           <ul class="nav-list wrap">
             <li class="nav-item">
-              <a href="" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">How it’s made?</a>
+              <a href="#made" class="nav-link">How it’s made?</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Chocolate is loved</a>
+              <a href="#reviews" class="nav-link">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
         <ul class="social-media-list wrap">
           <li class="social-media-item ">
-            <a href="" class="social-media-link link">
+            <a href="https://www.instagram.com/" class="social-media-link link" target="_blank">
               <svg class="social-media-icons" width="24" height="24">
                 <use src="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-media-item">
-            <a href="" class="social-media-link">
+            <a href="https://twitter.com/" class="social-media-link" target="_blank">
               <svg class="social-media-icons" width="24" height="24">
                 <use src="./images/icons.svg#icon-twitter"></use>
               </svg>
@@ -66,22 +66,26 @@
 
     <!-- Section Hero -->
     <main>
-      <section class="hero">
-        <div class="hero-wrap">
+      <section class="hero container">
+        
           <h1>
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button type="button">Buy now</button>
-          <a href="#">How it’s made</a>
-          <button type="button">scroll down</button>
-        </div>
+          <div class="buttons-wrap wrap">
+            <div class="CTA-btn-wrap wrap">
+              <button type="button" class="CTA-btn">Buy now</button>
+              <a href="#made" class="CTA-link">How it’s made</a>
+            </div>
+            <a href="#footer" class="scroll">scroll down</a>
+          </div>
+       
       </section>
       <!-- Section Benefits -->
-      <section class="benefits">
+      <section class="benefits container " id="benefits">
         <div class="benefits-wrap">
-          <h2 class="benefits-title">Benefits</h2>
-          <ul class="benefits-list">
+          <h2 class="benefits-title visually-hidden">Benefits</h2>
+          <ul class="benefits-list wrap">
             <li class="benefits-item">
               <svg class="benefits-icon" width="32" height="32"><use src="./images/icons.svg#icon-fluent-emoji-high-contrast_chocolate-bar"></use></svg>
               <h3>Unsurpassed taste</h3>
@@ -117,7 +121,7 @@
         </div>
       </section>
       <!-- Section Ingrediens -->
-      <section class="ingredients">
+      <section class="ingredients container" >
         <div class="ingredients-wrap">
           <h2 class="ingredients-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION
@@ -128,7 +132,7 @@
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul class="ingredients-list">
+          <ul class="ingredients-list wrap">
             <li class="ingredients-item">
               <img src="./images/chocolate.png" alt="" class="img-1" width="206" height="160" />
               <p>mILK CHOCOLATE</p>
@@ -149,49 +153,53 @@
         </div>
       </section>
       <!-- Section How it`s made -->
-      <section class="made">
+      <section class="made container" id="made">
         <div class="made-wrap">
           <h2 class="made-title">hOW IT’S made?</h2>
-          <img src="./images/image-min.jpg" alt="" class="made-img" width="600" height="400" />
-          <h3>
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p>
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>Heat the mixture over low heat, letting it barely boil.</p>
-            </li>
-            <li class="made-item">
-              <p>
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+          <div class="made-content-wrap wrap">
+            <img src="./images/image-min.jpg" alt="" class="made-img" width="600" height="400" />
+            <div class="made-text">
+              <h3>
+                Try our chocolates today and discover the perfect balance of flavor
+              </h3>
+              <ul class="made-list ">
+                <li class="made-item">
+                  <p>
+                    Heat the milk in a saucepan without bringing it to a boil. Add
+                    sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    At the same time, prepare a water bath. Melt the butter on it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                    with a silicone spatula so that the mass becomes uniform and
+                    silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>Heat the mixture over low heat, letting it barely boil.</p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    Pour the chocolate into special containers (can be replaced with
+                    ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Section Reviews -->
-      <section class="reviews">
+      <section class="reviews container" id="reviews">
         <div class="reviews-wrap">
           <h2 class="reviews-title">chocolate is loved</h2>
-          <ul class="reviews-list">
+          <ul class="reviews-list wrap">
             <li class="reviews-item">
               <img src="./images/review-img-1.png" alt="" class="review-img" width="80" height="80" />
               <h3>Victoria Dobrzhanska</h3>
@@ -223,8 +231,8 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <div class="footer-wrap">
+    <footer id="footer">
+      <div class="footer-wrap container">
         <p>Chocolate a delicious cure for a bad day</p>
         <address class="address">
           <p>Contact us</p>
