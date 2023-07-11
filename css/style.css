@@ -124,12 +124,14 @@ h2 {
   line-height: 1.17;
   letter-spacing: -0.72px;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
 }
 
 .benefits,
@@ -137,6 +139,10 @@ h3 {
 .made,
 .reviews {
   margin-bottom: 100px;
+}
+
+.title-accent {
+  color: var(--primary-brand);
 }
 
 /* 
@@ -166,6 +172,10 @@ header
 
 .nav-list {
   gap: 24px;
+}
+
+.nav-item {
+  transition: color 250ms ease-out;
 }
 
 .nav-item:hover,
@@ -217,15 +227,34 @@ hero
 .CTA-btn {
   background-color: var(--primary-brand);
   margin-right: 24px;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+.CTA-btn:hover,
+.CTA-btn:focus {
+  background-color: var(--pressed-state);
+  color: var(--primary-brand);
 }
 
 .CTA-link {
   border: 1px solid var(--white-backgroung-color);
+  transition: border 250ms ease-out, color 250ms ease-out;
+}
+
+.CTA-link:hover,
+.CTA-link:focus {
+  border: 1px solid var(--primary-brand);
+  color: var(--primary-brand);
 }
 
 .scroll {
   color: var(--white-text-color);
   font-weight: 500;
+  transition: color 250ms ease-out;
+}
+
+.scroll:hover {
+  color: var(--primary-brand);
 }
 
 /* 
@@ -257,4 +286,68 @@ benefits
   padding: 15px;
   stroke: #fd9222;
   margin-bottom: 22px;
+}
+
+/*
+======================================
+Section Ingrediens
+======================================
+*/
+
+.ingredients-title {
+  margin-bottom: 28px;
+}
+
+.ingredients-text {
+  text-align: center;
+  max-width: 486px;
+  margin: 0 auto 50px auto;
+}
+
+.ingredients-list p {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 36px;
+}
+
+.ingredients-item {
+  width: 270px;
+  height: 270px;
+  padding: 28px;
+}
+
+/*
+======================================
+Section How it`s made
+======================================
+*/
+
+.made-title {
+  text-transform: lowercase;
+}
+
+.made-content-wrap {
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.made-img {
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+}
+.made-text {
+  padding: 32px;
+}
+
+.made-list {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+.made-item h3 {
+  margin-bottom: 28px;
+}
+
+.made-item {
+  margin-bottom: 24px;
 }
