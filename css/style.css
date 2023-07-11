@@ -31,7 +31,6 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.28px;
-  padding: 0 32px;
 }
 
 ul,
@@ -314,6 +313,17 @@ Section Ingrediens
   width: 270px;
   height: 270px;
   padding: 28px;
+  border-radius: 15px;
+  background-color: var(--primary-brand);
+}
+
+.ingredients-item:nth-child(2n) {
+  background-color: transparent;
+  border: 1px solid var(--primary-brand);
+}
+
+.ingredients-item:nth-child(3n) {
+  background-color: var(--black-background);
 }
 
 /*
