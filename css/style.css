@@ -31,6 +31,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.28px;
+  background-color: var(--light);
 }
 
 ul,
@@ -318,7 +319,7 @@ Section Ingrediens
 }
 
 .ingredients-item:nth-child(2n) {
-  background-color: transparent;
+  background-color: var(--white-backgroung-color);
   border: 1px solid var(--primary-brand);
 }
 
@@ -360,4 +361,121 @@ Section How it`s made
 
 .made-item {
   margin-bottom: 24px;
+}
+
+/* 
+===========================
+Section Reviews
+===========================
+*/
+
+.reviews-list {
+  gap: 28px;
+  justify-content: center;
+}
+
+.reviews-item {
+  position: relative;
+  height: 200px;
+  flex-basis: calc(100% / 2 - 2 * 28px);
+
+  text-align: center;
+  background-color: var(--white-backgroung-color);
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-radius: 15px;
+  padding: 56px 24px 24px 24px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.review-img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.leave-review {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 14px 40px;
+  background-color: transparent;
+  border: 1px solid var(--primary-brand);
+  border-radius: 100px;
+  margin: 0 auto;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+.leave-review:hover,
+.leave-review:focus {
+  background-color: var(--primary-brand);
+  color: var(--white-backgroung-color);
+}
+
+/* 
+===========================
+Footer
+===========================
+*/
+
+footer {
+  padding: 50px 32px;
+  background-color: var(--black-background);
+  color: var(--white-text-color);
+}
+
+.footer-text-wrap {
+  padding-bottom: 50px;
+}
+
+.footer-text-wrap > p {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.footer-text-wrap p {
+  font-weight: 500;
+}
+
+.address-wrap {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 14px;
+  gap: 8px;
+}
+
+.footer-text-wrap:after {
+}
+
+.footer-menu-list {
+  gap: 24px;
+}
+
+.submit-btn {
+  background-color: var(--primary-brand);
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--pressed-state);
+  color: var(--primary-brand);
+}
+
+.submit-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  padding: 14px 24px;
+  width: 313px;
+  margin-right: 8px;
+}
+
+.submit-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
