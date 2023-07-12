@@ -106,6 +106,7 @@ base styles
 
 .container {
   max-width: 1200px;
+  padding: 0 32px;
   margin: 0 auto;
 }
 
@@ -172,8 +173,12 @@ header
 
 .nav-list {
   gap: 24px;
+  margin-right: 90px;
 }
 
+.social-media-list {
+  gap: 24px;
+}
 .nav-item {
   transition: color 250ms ease-out;
 }
@@ -182,8 +187,15 @@ header
 .nav-item:focus {
   color: var(--primary-brand);
 }
+
+.social-media-icons:hover,
+.social-media-icons:focus {
+  stroke: var(--primary-brand);
+}
 .social-media-icons {
+  fill: none;
   stroke: var(--text-color);
+  transition: stroke 250ms ease-out;
 }
 
 /* 
@@ -266,10 +278,11 @@ benefits
 .benefits {
   background-color: var(--black-background);
   color: var(--white-text-color);
-  padding: 50px;
+  padding: 50px 0px;
 }
 
 .benefits-list {
+  align-items: baseline;
   gap: 88px;
 }
 .benefits-item > p {
@@ -284,7 +297,7 @@ benefits
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   padding: 15px;
-  stroke: #fd9222;
+  fill: var(--primary-brand);
   margin-bottom: 22px;
 }
 
@@ -474,6 +487,7 @@ footer {
   padding: 14px 24px;
   width: 313px;
   margin-right: 8px;
+  color: var(--white-text-color);
 }
 
 .submit-input::placeholder {
