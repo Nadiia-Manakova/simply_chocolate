@@ -263,12 +263,34 @@ hero
   color: var(--white-text-color);
   font-weight: 500;
   transition: color 250ms ease-out;
+  gap: 14px;
 }
 
 .scroll:hover {
   color: var(--primary-brand);
 }
 
+.scroll:hover .scroll-icon {
+  fill: var(--white-text-color);
+}
+
+.scroll:hover .scroll-btn {
+  background-color: var(--primary-brand);
+}
+
+.scroll-btn {
+  width: 38px;
+  height: 38px;
+  background-color: var(--white-backgroung-color);
+  border-radius: 50%;
+  justify-content: center;
+  transition: background-color 250ms ease-out;
+}
+
+.scroll-icon {
+  fill: var(--primary-brand);
+  transition: fill 250ms ease-out;
+}
 /* 
 ===========================
 benefits
