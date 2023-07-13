@@ -379,8 +379,7 @@ Section Ingrediens
   padding: 20px;
   top: 0;
   left: 0;
-  overflow: hidden;
-  overflow: auto;
+  overflow: visible;
   transition: transform 250ms ease-out;
 }
 
@@ -390,6 +389,11 @@ Section Ingrediens
 
 .tag-transperent {
   border: 1px solid var(--primary-brand);
+}
+
+.ingredients-item:hover,
+.ingredients-item:focus {
+  transform: translateY(0);
 }
 /*
 ======================================
