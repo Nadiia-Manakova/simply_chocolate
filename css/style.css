@@ -339,18 +339,21 @@ Section Ingrediens
   margin: 0 auto 50px auto;
 }
 
-.ingredients-list p {
+.ingredients-item > p {
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 36px;
 }
 
 .ingredients-item {
+  position: relative;
   width: 270px;
   height: 270px;
   padding: 28px;
   border-radius: 15px;
   background-color: var(--primary-brand);
+  overflow: hidden;
+  transition: background-color 250ms ease-out;
 }
 
 .ingredients-item:nth-child(2n) {
@@ -362,6 +365,53 @@ Section Ingrediens
   background-color: var(--black-background);
 }
 
+.ingredients-item:nth-child(3n) > p {
+  color: var(--white-text-color);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-backgroung-color);
+  transform: translateY(100%);
+  border-radius: 15px;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  transition: transform 250ms ease-out;
+}
+
+.ingredients-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.ingredients-item:hover {
+  border: 1px solid var(--primary-brand);
+  background-color: var(--white-backgroung-color);
+}
+
+.overlay-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.overlaytags span {
+  display: inline-flex;
+  font-size: 10px;
+  padding: 6px 16px;
+  border-radius: 35px;
+  margin-bottom: 14px;
+}
+
+.tag-background {
+  background-color: var(--primary-brand);
+}
+
+.tag-transperent {
+  border: 1px solid var(--primary-brand);
+}
 /*
 ======================================
 Section How it`s made
