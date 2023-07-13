@@ -379,22 +379,32 @@ Section Ingrediens
   padding: 20px;
   top: 0;
   left: 0;
-  overflow: visible;
+  overflow: auto;
   transition: transform 250ms ease-out;
 }
 
-.tag-background {
-  background-color: var(--primary-brand);
-}
-
-.tag-transperent {
-  border: 1px solid var(--primary-brand);
-}
-
-.ingredients-item:hover,
-.ingredients-item:focus {
+.ingredients-item:hover .overlay {
   transform: translateY(0);
 }
+
+.ingredients-item:hover {
+  border: 1px solid var(--primary-brand);
+  background-color: var(--white-backgroung-color);
+}
+
+.overlay-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.overlaytags span {
+  display: inline-flex;
+  font-size: 10px;
+  padding: 6px 16px;
+  border-radius: 35px;
+  margin-bottom: 14px;
+}
+
 /*
 ======================================
 Section How it`s made
