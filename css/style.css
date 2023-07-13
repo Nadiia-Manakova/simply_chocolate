@@ -405,6 +405,14 @@ Section Ingrediens
   margin-bottom: 14px;
 }
 
+.tag-background {
+  background-color: var(--primary-brand);
+}
+
+.tag-transperent {
+  border: 1px solid var(--primary-brand);
+}
+
 /*
 ======================================
 Section How it`s made
