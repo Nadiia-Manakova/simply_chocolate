@@ -307,6 +307,23 @@ benefits
   align-items: baseline;
   gap: 88px;
 }
+
+.benefits-item {
+  position: relative;
+}
+
+.benefits-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .benefits-item > p {
   color: rgba(255, 255, 255, 0.7);
 }
