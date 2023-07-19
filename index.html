@@ -418,62 +418,58 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn wrap" type="button" data-modal-close>
-          <svg class="close-icon">
+          <svg class="close-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form action="" class="form-box wrap"></form>
         <p class="form-text">
           LEAVE A REVIEW ABOUT <br /><span class="title-accent">
             OUR CHOCOLATE</span
           >
         </p>
-        
-          <div class="form-inputs-item">
-            <label for="user-name" class="input-label">Name</label>
-            <div class="input-box wrap">
-              <svg class="input-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
+        <form action="" class="form-box wrap">
+        <label for="user-name" class="input-label input-box wrap">Name         
               <input
                 type="text"
                 class="form-input"
                 name="user-name"
                 id="user-name"
               />
-            </div>
+            <svg class="input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </label>
 
-            <div class="form-inputs-item">
-              <label for="user-email" class="input-label">Email</label>
-              <div class="input-box wrap">
-                <svg class="input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
+            
+              <label for="user-email" class="input-label input-box wrap">
+                Email
+                
                 <input
                   type="email"
                   class="form-input"
                   name="user-email"
                   id="user-email"
                 />
-              </div>
-            </div>
-            <div class="form-inputs-item">
-              <label for="user-phone" class="input-label">Phone number</label>
-              <div class="input-box wrap">
                 <svg class="input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
+                  <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
+              </label>
+           
+              <label for="user-phone" class="input-label input-box wrap">Phone number
+                
                 <input
                   type="tel"
                   class="form-input"
                   name="user-phone"
                   id="user-phone"
                 />
-              </div>
-            </div>
+                <svg class="input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+</label>
 
-            <label for="user-comment" class="input-label"> Comment </label>
-            <div class="input-box textarea">
+            <label for="user-comment" class="input-label input-box"> Comment 
+            
               <textarea
                 name="user-comment"
                 rows="4"
@@ -481,7 +477,7 @@
                 class="text-input"
                 id="user-comment"
               ></textarea>
-            </div>
+            </label>
             <div class="checkbox-wrap">
               <input
                 type="checkbox"
@@ -500,10 +496,9 @@
                 <a href="" class="checkbox-link link">Privacy Policy</a>
               </label>
             </div>
-          </div>
-        
-        <button class="form-btn" type="submit">Send</button>
         </form>
+        <button class="form-btn" type="submit">Send</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
