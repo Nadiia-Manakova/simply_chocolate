@@ -453,6 +453,8 @@ Section How it`s made
 }
 .made-text {
   padding: 32px;
+  background-color: var(--white-backgroung-color);
+  border-radius: 15px;
 }
 
 .made-item h3 {
@@ -800,7 +802,7 @@ max-width: 1200px
     margin-right: 48px;
   }
   .container {
-    max-width: 768px;
+    max-width: 100%;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -814,7 +816,7 @@ max-width: 1200px
   .ingredients,
   .made,
   .reviews {
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
   }
 
   .hero {
@@ -824,7 +826,7 @@ max-width: 1200px
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(../images/tablet/hero-bg.jpg);
-    max-width: 704px;
+    max-width: 92%;
     height: 890px;
     background-position: 50%;
     padding-top: 671px;
@@ -854,8 +856,16 @@ max-width: 1200px
   .reviews-list {
     gap: 32px;
   }
+
+  .ingredients-img {
+    transform: translateX(50%);
+  }
+  .made-img {
+    width: 100%;
+    height: auto;
+  }
+
   .footer-wrap {
-    max-width: 768px;
     margin: 0 auto;
   }
   .footer-text-wrap,
