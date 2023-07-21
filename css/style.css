@@ -857,9 +857,6 @@ max-width: 1200px
     gap: 32px;
   }
 
-  .ingredients-img {
-    transform: translateX(50%);
-  }
   .made-img {
     width: 100%;
     height: auto;
