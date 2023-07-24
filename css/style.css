@@ -854,6 +854,10 @@ max-width: 1200px
     margin: 0 auto 80px;
   }
 
+  .burger {
+    display: none;
+  }
+
   .hero {
     background-image: linear-gradient(
         180deg,
@@ -920,6 +924,79 @@ max-width: 768px
   .wrap {
     flex-direction: column;
   }
+
+  .header-wrap,
+  .logo-wrap,
+  .CTA-btn-wrap,
+  .scroll {
+    flex-direction: row;
+  }
+  .hero {
+    padding: 395px 20px 20px;
+    height: auto;
+    background-image: url(../images/mobile/hero-bg.jpg);
+  }
+  .buttons-wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .nav-menu,
+  .social-media-list {
+    display: none;
+  }
+
+  .ingredients-list,
+  footer {
+    display: block;
+    text-align: left;
+  }
+  footer {
+    padding: 32px 0;
+  }
+  .footer-menu-wrap,
+  .footer-menu-list,
+  .footer-text-wrap,
+  .CTA-btn-wrap {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .submit-form-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .submit-input {
+    width: 207px;
+  }
+
+  .submit-btn {
+    padding: 14px 24px;
+    width: 120px;
+  }
+  .ingredients-item {
+    margin: 0 auto 32px auto;
+  }
+
+  .hero h1 {
+    width: auto;
+  }
+
+  .burger {
+    display: block;
+    stroke: var(--black-background);
+    transition: stroke 250ms ease-out;
+  }
+
+  .burger-btn {
+    background-color: transparent;
+  }
+
+  .burger-btn:focus .burger {
+    stroke: var(--primary-brand);
+  }
 }
 
 /* 
@@ -929,4 +1006,8 @@ max-width: 375px
 */
 
 @media (max-width: 374px) {
+  .submit-form-wrap {
+    flex-direction: column;
+    gap: 18px;
+  }
 }
