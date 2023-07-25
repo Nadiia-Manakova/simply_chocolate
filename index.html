@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -293,14 +294,20 @@
         </div>
       </section>
       <!-- Section How it`s made -->
-      <section class="made container" id="made">
+
+      <section class="made container section features" id="made">
+         
         <div class="made-wrap">
           <h2 class="made-title">
             hOW IT’S <span class="title-accent">made?</span>
           </h2>
           <div class="made-content-wrap wrap">
-            <img src="./images/image-min.jpg" alt="" class="made-img" />
-            <div class="made-text">
+            <div class="made-video">
+              <div class="features-video plyr__video-embed" id="features-player" data-poster="./images/image-min.jpg">
+        <iframe src="https://www.youtube.com/embed/2H0tglcIKsM?autoplay=0&modestbranding=1&controls=0&disablekb=1&playsinline=1&cc_load_policy=1&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fplyr.io%2F%23youtube&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fplyr.io&widgetid=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
+      </div>
+            </div>
+    <div class="made-text">
               <h3>
                 Try our chocolates today and discover the perfect balance of
                 flavor
@@ -530,6 +537,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/plyr.min.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

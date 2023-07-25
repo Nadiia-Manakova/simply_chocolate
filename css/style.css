@@ -198,6 +198,10 @@ header
   transition: stroke 250ms ease-out;
 }
 
+.burger-btn {
+  display: none;
+}
+
 /* 
 ===========================
 hero
@@ -477,7 +481,10 @@ Section How it`s made
 
 .made-content-wrap {
   align-items: flex-start;
+  align-items: center;
+  max-width: 100%;
   gap: 20px;
+  margin-bottom: 100px;
 }
 
 .made-img {
@@ -486,7 +493,7 @@ Section How it`s made
   border-radius: 15px;
 }
 .made-text {
-  padding: 32px;
+  padding: 20px;
   background-color: var(--white-backgroung-color);
   border-radius: 15px;
 }
@@ -513,6 +520,46 @@ Section How it`s made
   border-radius: 50%;
   margin-bottom: 5px;
 }
+
+/* Налаштування для відео-програвача */
+
+.made-video,
+.made-text {
+  width: calc(50%);
+}
+
+.made-video {
+  height: 100%;
+}
+
+.features-video {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.plyr {
+  --plyr-color-main: #fd9222;
+  border-radius: 15px;
+}
+
+.plyr__poster {
+  background-size: cover;
+}
+
+.plyr__control--overlaid {
+  --plyr-control-spacing: 5px;
+  --plyr-video-control-background-hover: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+}
+
+.plyr--paused.plyr__control--overlaid {
+  opacity: 0;
+}
+.plyr--paused.plyr--stopped .plyr__controls {
+  opacity: 0;
+}
+
 /* 
 ===========================
 Section Reviews
@@ -826,6 +873,18 @@ input:checked + .checkbox-label > .checkbox-icon-box {
   border: none;
 }
 
+.section {
+  width: 96vw;
+  margin: 0 auto;
+}
+.features-title {
+  text-align: center;
+}
+.features-link {
+  text-decoration: none;
+  color: #fd9222;
+}
+
 /* 
 ===================================
 max-width: 1200px
@@ -852,10 +911,6 @@ max-width: 1200px
   .made,
   .reviews {
     margin: 0 auto 80px;
-  }
-
-  .burger {
-    display: none;
   }
 
   .hero {
@@ -921,6 +976,10 @@ max-width: 768px
 */
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+
   .wrap {
     flex-direction: column;
   }
@@ -930,6 +989,15 @@ max-width: 768px
   .CTA-btn-wrap,
   .scroll {
     flex-direction: row;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .logo-img {
+    width: 21px;
+    height: 21px;
   }
   .hero {
     padding: 395px 20px 20px;
@@ -944,6 +1012,16 @@ max-width: 768px
   .nav-menu,
   .social-media-list {
     display: none;
+  }
+
+  .scroll-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .scroll-icon {
+    width: 16px;
+    height: 16px;
   }
 
   .ingredients-list,
@@ -985,12 +1063,12 @@ max-width: 768px
   }
 
   .burger {
-    display: block;
     stroke: var(--black-background);
     transition: stroke 250ms ease-out;
   }
 
   .burger-btn {
+    display: block;
     background-color: transparent;
   }
 
